@@ -85,7 +85,7 @@ public struct FTS5Pattern {
         try? self.init(rawPattern: "^\"" + tokens.joined(separator: " ") + "\"")
     }
     
-    init(rawPattern: String, allowedColumns: [String] = []) throws {
+    public init(rawPattern: String, allowedColumns: [String] = []) throws {
         // Correctness above all: use SQLite to validate the pattern.
         //
         // Invalid patterns have SQLite return an error on the first
