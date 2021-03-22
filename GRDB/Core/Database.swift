@@ -415,7 +415,7 @@ public final class Database {
     /// This method must be called before database deallocation
     func close() {
         SchedulingWatchdog.preconditionValidQueue(self)
-        assert(!isClosed)
+//        assert(!isClosed)
         
         configuration.SQLiteConnectionWillClose?(sqliteConnection)
         internalStatementCache.clear()
