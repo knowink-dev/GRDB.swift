@@ -785,10 +785,14 @@ class FetchedRecordsControllerTests: GRDBTestCase {
         try controller.performFetch()
         
         let expectation = self.expectation(description: "expectation")
-        controller.trackChanges {
+        controller.trackChanges(willChange: nil, onChange: nil) {
             persons = $0.fetchedRecords
             expectation.fulfill()
         }
+//        controller.trackChanges {
+//            persons = $0.fetchedRecords
+//            expectation.fulfill()
+//        }
         try dbQueue.inTransaction { db in
             try synchronizePersons(db, [
                 Person(id: 1, name: "Arthur")])
