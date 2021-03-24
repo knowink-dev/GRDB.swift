@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DC3773F219C8CBB3004FCF85"
-               BuildableName = "GRDB.framework"
+               BuildableName = ".framework"
                BlueprintName = "GRDBOSX"
                ReferencedContainer = "container:GRDB.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC3773F219C8CBB3004FCF85"
-            BuildableName = "GRDB.framework"
+            BuildableName = ".framework"
             BlueprintName = "GRDBOSX"
             ReferencedContainer = "container:GRDB.xcodeproj">
          </BuildableReference>
@@ -101,7 +101,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC3773F219C8CBB3004FCF85"
-            BuildableName = "GRDB.framework"
+            BuildableName = ".framework"
             BlueprintName = "GRDBOSX"
             ReferencedContainer = "container:GRDB.xcodeproj">
          </BuildableReference>
@@ -117,7 +117,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC3773F219C8CBB3004FCF85"
-            BuildableName = "GRDB.framework"
+            BuildableName = ".framework"
             BlueprintName = "GRDBOSX"
             ReferencedContainer = "container:GRDB.xcodeproj">
          </BuildableReference>

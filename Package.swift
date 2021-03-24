@@ -1,4 +1,4 @@
-// swift-tools-version:4.2
+// swift-tools-version:5.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -11,13 +11,17 @@ let package = Package(
     dependencies: [
     ],
     targets: [
-        .systemLibrary(
-            name: "sqlite3",
-            providers: [.apt(["libsqlite3-dev"])]),
         .target(
             name: "GRDB",
             dependencies: ["sqlite3"],
-            path: "GRDB"),
+            path: "GRDB",
+            swiftSettings: [
+                .define("SQLITE_ENABLE_FTS5")
+            ]
+        ),
+        .systemLibrary(
+            name: "sqlite3",
+            providers: [.apt(["libsqlite3-dev"])]),
         .testTarget(
             name: "GRDBTests",
             dependencies: ["GRDB"],
@@ -28,7 +32,11 @@ let package = Package(
                 "Crash",
                 "Performance",
                 "SPM",
-            ])
+            ],
+            swiftSettings: [
+                .define("SQLITE_ENABLE_FTS5")
+            ]
+        )
     ],
-    swiftLanguageVersions: [.v4_2, .version("5")]
+    swiftLanguageVersions: [.version("5")]
 )
