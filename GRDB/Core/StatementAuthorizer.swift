@@ -9,7 +9,7 @@ import SQLCipher
 import SQLite3
 #endif
 
-import string_h
+import Foundation
 
 /// A protocol around sqlite3_set_authorizer
 protocol StatementAuthorizer: AnyObject {
