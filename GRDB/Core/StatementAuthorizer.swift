@@ -2,6 +2,8 @@
 import Glibc
 #endif
 
+import string_h
+
 /// `StatementAuthorizer` provides information about compiled database
 /// statements, and prevents the truncate optimization when row deletions are
 /// observed by transaction observers.
