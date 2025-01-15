@@ -9,6 +9,8 @@ import SQLCipher
 import SQLite3
 #endif
 
+import Foundation
+
 /// A protocol around sqlite3_set_authorizer
 protocol StatementAuthorizer: AnyObject {
     func authorize(
