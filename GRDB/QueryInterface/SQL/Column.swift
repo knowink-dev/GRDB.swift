@@ -16,7 +16,7 @@
 ///
 /// - ``noOverwrite``
 /// - ``set(to:)``
-public protocol ColumnExpression: SQLSpecificExpressible {
+public protocol ColumnExpression: SQLSpecificExpressible, Sendable {
     /// The column name.
     ///
     /// The column name is never qualified with a table name.
